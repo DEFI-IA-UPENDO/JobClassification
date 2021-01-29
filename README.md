@@ -53,7 +53,8 @@ If you want to reproduce all the training,on your command line, type:
 and follow the instructions :
 
 ### Docker :
-<p>Dans le dossier courant de l'application executez les commandes suivantes : </p>
+
+<p>In the current directory of the application, execute the  following commands : </p>
 ```
 docker build -t job_classification .
 docker run -i job_classification
