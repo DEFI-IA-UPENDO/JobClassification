@@ -22,11 +22,19 @@ The final accuracies we had were:
 * Public score:  0.78049
 * Private score: 0.78013
 
-## Computation time?
- *TODO: add computation time here*
+## Computation time and Engine?
+**BERT** 
+* Colab GPU: ~ 2h
+* Local (using GPU): ~ 5.2h 
+
+**SVC**
+* Local (using CPU): 3 ~ 5min
+
+**Bi-GRU-LSTM-CNN-Glove**
+* Kaggle: ~ 12min  (GPU = 16GB, CPU = 13GB)
+* Local : ~ 12h  (Intel ® Core(™) i7-6500U CPU @ 2.50GHz 2.59GHz, Ram : 16Go, System : 64 bits)
  
 ## Technical requirements
-*TODO:engine used*
 
 You should install the following packages. <br>
 They are all mentioned in the requirements.txt file. <br>
