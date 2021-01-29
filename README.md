@@ -30,6 +30,7 @@ The final accuracies we had were:
 
 You should install the following packages.They are all mentionned in the requirements.txt file: <br>
 *TODO: add the content of the requirements.txt.*
+
 To install all the packages, on your command line, type: 
 > pip install -r requirements.txt
 
