@@ -120,6 +120,7 @@ class PredictionBi:
             gdown.download(url, output, quiet=False)
         finally:
             model = load_model(self.model_path)
+            print("Starting Prediction......")
             y_pred_test = model.predict(X_test_new)
             predictions = np.argmax(y_pred_test, axis=1)
 
