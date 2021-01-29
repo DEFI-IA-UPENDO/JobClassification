@@ -54,7 +54,8 @@ and follow the instructions :
 
 ### Docker :
 
-<p>In the current directory of the application, execute the  following commands : </p>
+<p>In the current directory of the application, execute the  following commands : </p> <br>
+
 ```
 docker build -t job_classification .
 docker run -i job_classification
