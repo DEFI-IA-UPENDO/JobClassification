@@ -50,4 +50,22 @@ and follow the instructions
 If you want to reproduce all the training,on your command line, type:
 > python main.py 
 
-and follow the instructions
+and follow the instructions :
+
+### Docker :
+<p>Dans le dossier courant de l'application executez les commandes suivantes : </p>
+```
+docker build -t job_classification .
+docker run -i job_classification
+```
+
+### Conda :
+
+ ```
+ conda create -n JobClassification python=3.7.9
+conda activate JobClassification
+pip install -r requirements.txt 
+>python main.py
+```
+
+
