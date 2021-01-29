@@ -67,7 +67,7 @@ docker run -i job_classification
  conda create -n JobClassification python=3.7.9
 conda activate JobClassification
 pip install -r requirements.txt 
->python main.py
+>python app/main.py  
 ```
 
 
