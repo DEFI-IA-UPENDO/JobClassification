@@ -51,7 +51,7 @@ def apply_all_transformation(txt):
 
 
 def clean_df_column(dataset, column, cleaned_column):
-    print("Data Cleaning....")
+    nltk.download('stopwords')
     dirty_column = dataset[str(column)]
     clean = [" ".join(apply_all_transformation(x)) for x in tqdm(dirty_column)]
     dataset[str(cleaned_column)] = clean

@@ -1,10 +1,11 @@
 import pandas as pd
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 import numpy as np
 from Cleaning_text.CleanText import clean_df_column
 from Model.Bert.Bert import BERTDataset
 import pickle
+
 
 
 class Processing:
@@ -39,12 +40,12 @@ class Processing:
 
     def process_SVC(self):
         clean_df_column(self.train_df, 'description', 'description_cleaned')
-        Count_Vect = CountVectorizer(ngram_range=(1, 2))
-        Count_Vect.fit(self.train_df["description_cleaned"].values)
+        TF_IDF = TfidfVectorizer(ngram_range=(1, 2))
+        TF_IDF.fit(self.train_df["description_cleaned"].values)
 
-        pickle.dump(Count_Vect, open("app/Model/SVC/Count_Vect.pickle", "wb"))
+        pickle.dump(TF_IDF, open("app/Model/SVC/Count_Vect.pickle", "wb"))
 
-        train_df_vect = Count_Vect.transform(self.train_df["description_cleaned"].values)
+        train_df_vect = TF_IDF.transform(self.train_df["description_cleaned"].values)
 
         X_train, X_test, y_train, y_test = train_test_split(train_df_vect, self.train_label.Category.values,
                                                             test_size=0.2,
@@ -58,3 +59,6 @@ class Processing:
         }
 
         return processed_data
+
+
+
