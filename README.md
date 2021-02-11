@@ -11,7 +11,7 @@
 
 The goal of the *Défi-IA* was to  assign the correct job category (among 28 categories) to a job description. 
 The link to the kaggle page of the the competition is : https://www.kaggle.com/c/defi-ia-insa-toulouse .<br>
-For this project, we tested several models including BERT, Logistic Regression, Embedding,lstm-gru-cnn-glove and SVC. 
+For this project, we tested several models including BERT, Logistic Regression, lstm-gru-cnn-glove and SVC. 
 With individual models, we didn't get the accuracy we were excepting. 
 Therefore, we chose those giving the best accuracies ( i.e Bert, SVC and lstm-gru-cnn-glove), and performed a majority voting on them. <br> 
 BERT had the best accuracy among the three models, so we gave it the priority in case all the three predictions are different. <br>
