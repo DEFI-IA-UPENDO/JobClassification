@@ -1,6 +1,7 @@
 pandas==1.2.1
 tez @ git+https://github.com/rmoumni15/tez.git
 torch==1.7.1
+scipy
 transformers==3.5.0
 scikit-learn==0.23.2
 keras==2.4.3
